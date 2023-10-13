@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main()
+{
+    printf("Name : Gamila roshdy \n");
+    printf("DOB : 25-12 \n");
+    printf("mobile : 010001111\n");
+    return 0;
+}
