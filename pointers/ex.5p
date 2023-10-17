@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+   int fno, sno, *ptr1, *ptr2, sum;
+   
+    printf("\nInput the first number :");
+    scanf("%d", &fno);
+    printf("\nInput the second number :");
+    scanf("%d", &sno);
+    ptr1 = &fno;
+    ptr2 = &sno;
+    
+    if(*ptr1 > *ptr2)
+    {
+        printf("\n the maximum number is %d", *ptr1);
+    }
+    else
+    printf("\n %d is a maximum number ", *ptr2);
+    printf("The sum of the entered numbers is :%d\n", sum);
+    
+    return 0;
+}
