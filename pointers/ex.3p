@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main() 
+{
+    int m = 300;
+    float fx = 300.600006 ;
+    char cht = 'z';
+    printf("\n Pointer : Demonstrate the use of & and * operator :");
+    printf("\n --------------------------------------------------------  ");
+
+    printf("\n m = %d\n", m);
+    printf("\n fx = %f\n", fx);
+    printf("\n cht = %c\n", cht);
+    
+    int *pt1;
+    float *pt2;
+    char *pt3;
+     
+    pt1=&m;
+    pt2=&fx;
+    pt3=&cht;
+    
+    printf("\n Using & operator :");
+    printf("\n ---------------------- ");
+    printf("\n address of m =%p\n", &m); 
+    printf("\n address of fx =%p\n", &fx);
+    printf("\n address of cht =%p\n", &cht);
+    
+    printf("\n Using & and * operator : ");
+    printf("\n-----------------------------");
+    printf("\n value at address of fx =%f\n", *(&fx));
+    printf("\n value at address of cht =%c\n", *(&cht));
+    
+  printf("\n Using only pointer variable : ");
+  printf("\n ---------------------------------  ");
+  printf ( " address of m = %p\n",pt1);
+  printf ( " address of fx = %p\n",pt2);
+  printf ( " address of cht = %p\n",pt3);
+  printf("\n Using only pointer operator :\n"); 
+  printf("----------------------------------\n"); 
+  printf ( " value at address of m = %d\n",*pt1);
+  printf ( " value at address of fx= %f\n",*pt2);
+  printf ( " value at address of cht= %c\n\n",*pt3);
+   
+    return 0;
+}
