@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int m =29;
+    int* ab;
+    printf("\n Address of m :%p\n");
+    printf("\n Value of m :%d\n", m);
+    printf("\n Now ab is assigned with the address of m.");
+    ab = &m;
+    printf("\n Address of pointer ab :%p\n");
+    printf("\n Content of pointer ab :%d\n", * ab);
+    m = 34;
+    printf("The value of m assigned to 34 now.\n");
+    printf("\n Address of pointer ab :%p\n");
+    printf("\n Content of pointer ab : %d\n", *ab );
+    *ab =7;
+    printf("\n The pointer variable ab is assigned with the value 7 now.");
+    printf("Address of m : %p", &m);
+    printf("\n Value of m : %d\n ", *ab);
+    
+    return 0;
+}
